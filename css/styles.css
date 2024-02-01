@@ -14,3 +14,16 @@ td {
 #signup-form-fieldset {
   width: 10%;
 }
+
+/* rarely used; better use classes
+[href] {
+  color: rgb(101, 14, 14);
+}
+
+[type="email"] {
+  color: green;
+} */
+/* rarely used - applied to all elements
+*{
+  font-size: 40px;
+}*/
