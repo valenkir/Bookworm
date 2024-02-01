@@ -18,7 +18,42 @@
         </ul>
       </nav>
     </header>
-    <main id="signup-main"></main>
+    <main id="signup-main">
+      <section id="signup-form-section">
+        <form id="signup-form">
+          <fieldset id="signup-form-fieldset">
+            <legend>Sing up now</legend>
+            <label for="signup-email">Email*</label>
+            <br />
+            <input type="email" id="signup-email" />
+            <br />
+            <label for="signup-password">Password*</label>
+            <br />
+            <input type="password" id="signup-password" />
+            <br />
+            <label for="signup-username">Username*</label>
+            <br />
+            <input type="text" id="signup-username" />
+            <br />
+            <label for="signup-avatar">Avatar</label>
+            <br />
+            <input type="file" id="signup-avatar" />
+            <br />
+            <label for="signup-countries">Select your country</label>
+            <br />
+            <input list="countries" name="countries" id="signup-countries" />
+            <datalist id="countries">
+              <option value="USA"></option>
+              <option value="Bulgaria"></option>
+              <option value="Ukraine"></option>
+              <option value="Portugal"></option>
+            </datalist>
+            <br />
+            <td><button type="submit">Sign up</button></td>
+          </fieldset>
+        </form>
+      </section>
+    </main>
     <footer id="signup-footer">
       <ul id="footer-links">
         <li><a href="">Language</a></li>
