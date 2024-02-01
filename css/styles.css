@@ -7,3 +7,6 @@ td {
   background-color: rgb(216, 181, 248);
   text-align: center;
 }
+#login-form-fieldset {
+  width: 10%;
+}
