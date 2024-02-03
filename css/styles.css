@@ -1,3 +1,35 @@
+body {
+  background-color: #f5ebe0;
+  font-family: "Verdana", sans-serif;
+  color: #2f2f2f;
+}
+
+.header-content-style {
+  background-color: #2f2f2f;
+  color: white;
+  padding: 2% 0 2% 7%;
+  position: relative;
+}
+
+.header-content-style a {
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  left: 2%;
+  top: 8%;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 1%;
+}
+
 table,
 tr,
 td {
@@ -14,16 +46,3 @@ td {
 #signup-form-fieldset {
   width: 10%;
 }
-
-/* rarely used; better use classes
-[href] {
-  color: rgb(101, 14, 14);
-}
-
-[type="email"] {
-  color: green;
-} */
-/* rarely used - applied to all elements
-*{
-  font-size: 40px;
-}*/
