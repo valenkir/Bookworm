@@ -114,19 +114,19 @@ tr,
 td {
   border: 2px solid black;
 }
-#pricing-table-head {
+.pricing-table-head {
   background-color: rgb(216, 181, 248);
   text-align: center;
 }
-#login-form-fieldset {
+.login-form-fieldset {
   width: 10%;
 }
 
-#signup-form-fieldset {
+.signup-form-fieldset {
   width: 10%;
 }
 
-#footer-links {
+.footer-links {
   margin: 2% 0 2% 3%;
 }
 
