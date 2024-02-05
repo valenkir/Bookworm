@@ -4,7 +4,7 @@ body {
   background-image: url("../images/bookworm-home-background-top-2.svg"),
     url("../images/bookworm-home-background-bottom-2.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: right 0 top 5%, right 0% bottom 0;
+  background-position: right 0 top 10%, right 0% bottom 0;
 }
 
 p {
@@ -65,28 +65,56 @@ p {
 
 .popular-books-container {
   margin-left: 3%;
+  margin-top: 0;
   width: 50%;
 }
 
 .popular-books-container img {
   border: 15px solid #c7d6d5;
-  margin-top: 2%;
-}
-
-.popular-books-container .first-pop-book-home {
   margin-top: 0;
 }
 
-.popbook-annotation {
-  width: 70%;
-  line-height: 1.5;
-  margin: 3% 0;
-  display: inline-block;
+.overlay-with-annotation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #c7d6d5;
 }
-.author-home-popbooks {
+
+.popbooks-img-container {
+  position: relative;
   display: inline-block;
+  margin-top: 2%;
+}
+
+.popbooks-img-container .first-pop-book-home {
+  margin-top: 0;
+}
+
+.popbooks-img-container .overlay-with-annotation:hover {
+  opacity: 1;
+}
+
+.popbook-annotation {
+  position: absolute;
+  line-height: 1.5;
+  left: 5%;
+  top: 7%;
+  right: 5%;
+  color: black;
+  font-size: 18px;
+}
+
+.author-home-popbooks {
   margin: 2% 0 0 0;
   width: 100%;
+  display: inline-block;
 }
 
 h1 {
@@ -133,9 +161,19 @@ td {
 footer a {
   text-decoration: none;
   color: black;
-  display: inline-block;
   font-size: 18px;
-  margin-right: 1%;
+}
+
+.footer-link-background {
+  display: inline-block;
+  margin: 2% 2% 0 0;
+  background-color: rgb(245, 235, 224, 0);
+  border-radius: 10%;
+  padding: 0.5%;
+}
+
+footer .footer-link-background:hover {
+  background-color: rgb(245, 235, 224, 1);
 }
 
 .trial-button {
@@ -145,5 +183,6 @@ footer a {
 .rights {
   float: right;
   width: auto;
-  margin-right: 1%;
+  margin: 4% 1% 0 0;
+  font-size: 16px;
 }
