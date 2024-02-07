@@ -192,6 +192,23 @@ td {
 
 .pricing-table tbody .worm-into-pricing {
   background-color: #c7d6d5;
+  font-size: 18px;
+  padding: 2%;
+  border: solid transparent;
+  box-shadow: 0 0 3px 2px #00000080;
+  border-radius: 5%;
+}
+
+.pricing-table tbody .worm-into-pricing:hover {
+  background-color: rgb(199, 214, 213, 0.7);
+  box-shadow: 0 0 6px 5px #754f4460;
+}
+
+.pricing-table tbody .worm-into-pricing:active {
+  background-color: rgb(199, 214, 213, 0.7);
+  box-shadow: 0 0 10px 5px #754f4460;
+  border: solid 2px #6e8b89;
+  border-radius: 5%;
 }
 
 .price-per-month {
@@ -200,10 +217,35 @@ td {
   margin-bottom: 5%;
 }
 
+#free-trial p {
+  margin-top: 3%;
+}
+
+.free-trial-button {
+  margin: 1% 3%;
+  background-color: #f5ebe0;
+  font-size: 16px;
+  padding: 0.3%;
+  border: solid transparent;
+  box-shadow: 0 0 2px 1px #00000080;
+  border-radius: 5%;
+}
+
+.free-trial-button:hover {
+  background-color: rgb(245, 235, 224, 0.5);
+}
+
+.free-trial-button:active {
+  background-color: rgb(245, 235, 224, 0.5);
+  border: solid 2px rgb(117, 79, 68, 0.6);
+  box-shadow: 0 0 5px 5px #754f4460;
+  border-radius: 5%;
+}
+
 .discount-info-group {
   border: 5px solid #c7d6d5;
   background-color: rgb(199, 214, 213, 0.3);
-  margin: 1% 3%;
+  margin: 4% 3% 1% 3%;
   padding: 2%;
   width: 50%;
 }
