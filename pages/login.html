@@ -10,14 +10,28 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <header id="login-header">
-      <h1>Bookworm Digital library</h1>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="registration.html">Sign up</a></li>
-        </ul>
-      </nav>
+    <header id="home-header">
+      <div class="header-content-style">
+        <h1>Bookworm Digital library</h1>
+        <div class="nav-block-style">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="registration.html">Sign up</a></li>
+              <li class="nav-search-button-li">
+                <button type="button" class="nav-search-button">Search</button>
+              </li>
+              <li class="nav-search-field-li">
+                <input
+                  type="text"
+                  class="nav-search-field"
+                  placeholder="Search"
+                />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main id="login-main">
       <section id="login-form-section">
@@ -25,12 +39,19 @@
         <form class="login-form">
           <fieldset class="login-form-fieldset">
             <legend>Log in</legend>
-            <h3>Sign in</h3>
             <label for="login-email">Email</label>
-            <input type="email" id="login-email" />
+            <input
+              type="email"
+              id="login-email"
+              placeholder="your.email@example.com"
+            />
             <label for="login-password">Password</label>
-            <input type="password" id="login-password" />
-            <button type="submit">Log in</button>
+            <input
+              type="password"
+              id="login-password"
+              placeholder="at least 8 characters"
+            />
+            <button type="submit" class="login-button">Log in</button>
           </fieldset>
         </form>
         <a href="">Forgot password?</a>
@@ -44,8 +65,8 @@
     </main>
     <footer id="home-footer">
       <div class="footer-links">
-        <a href="">Contacts</a>
-        <a href="">Terms</a>
+        <div class="footer-link-background"><a href="">Contacts</a></div>
+        <div class="footer-link-background"><a href="">Terms</a></div>
         <p class="rights">All rights reserved 2024</p>
       </div>
     </footer>
