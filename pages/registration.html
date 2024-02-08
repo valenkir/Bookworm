@@ -40,19 +40,37 @@
           <fieldset class="user-access-forms">
             <legend>Sign up</legend>
             <label for="signup-email">Email*</label>
-            <input type="email" placeholder="your.email@example.com" />
+            <input
+              type="email"
+              id="signup-email"
+              placeholder="your.email@example.com"
+            />
             <label for="signup-password">Password*</label>
-            <input type="password" placeholder="at least 8 characters" />
+            <input
+              type="password"
+              id="signup-password"
+              placeholder="at least 8 characters"
+            />
             <label for="signup-username">Username*</label>
-            <input type="text" placeholder="your_username" />
+            <input
+              type="text"
+              id="signup-username"
+              placeholder="your_username"
+            />
             <label for="signup-avatar">Avatar</label>
             <input
               type="file"
+              id="signup-avatar"
               class="avatar-file-button"
               accept="image/png, image/jpeg"
             />
             <label for="signup-countries">Select your country</label>
-            <input list="countries" name="countries" placeholder="Country" />
+            <input
+              list="countries"
+              id="signup-countries"
+              name="countries"
+              placeholder="Country"
+            />
             <datalist id="countries">
               <option value="USA"></option>
               <option value="Bulgaria"></option>
