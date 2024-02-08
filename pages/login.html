@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <header id="home-header">
+    <header id="login-header">
       <div class="header-content-style">
-        <h1>Bookworm Digital library</h1>
+        <h1 class="m-1">Bookworm Digital library</h1>
         <div class="nav-block-style">
           <nav class="main-nav">
             <ul>
               <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#about-us">About</a></li>
               <li><a href="registration.html">Sign up</a></li>
               <li class="nav-search-button-li">
                 <button type="button" class="nav-search-button">Search</button>
@@ -35,26 +36,17 @@
     </header>
     <main id="login-main">
       <section id="login-form-section">
-        <h3>Welcome back!</h3>
         <form class="login-form">
-          <fieldset class="login-form-fieldset">
+          <fieldset class="user-access-forms">
             <legend>Log in</legend>
-            <label for="login-email">Email</label>
-            <input
-              type="email"
-              id="login-email"
-              placeholder="your.email@example.com"
-            />
-            <label for="login-password">Password</label>
-            <input
-              type="password"
-              id="login-password"
-              placeholder="at least 8 characters"
-            />
-            <button type="submit" class="login-button">Log in</button>
+            <label for="login-email">Email*</label>
+            <input type="email" placeholder="your.email@example.com" />
+            <label for="login-password">Password*</label>
+            <input type="password" placeholder="at least 8 characters" />
+            <button type="submit" class="user-access-buttons">Log in</button>
           </fieldset>
         </form>
-        <a href="">Forgot password?</a>
+        <a href="" class="m-1">Forgot password?</a>
       </section>
       <aside id="login-aside-trial">
         <p>
@@ -63,7 +55,7 @@
         </p>
       </aside>
     </main>
-    <footer id="home-footer">
+    <footer id="login-footer">
       <div class="footer-links">
         <div class="footer-link-background"><a href="">Contacts</a></div>
         <div class="footer-link-background"><a href="">Terms</a></div>

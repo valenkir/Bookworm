@@ -11,45 +11,59 @@
   </head>
   <body>
     <header id="signup-header">
-      <h1>Bookworm Digital library</h1>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
+      <div class="header-content-style">
+        <h1 class="m-1">Bookworm Digital library</h1>
+        <div class="nav-block-style">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#about-us">About</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li class="nav-search-button-li">
+                <button type="button" class="nav-search-button">Search</button>
+              </li>
+              <li class="nav-search-field-li">
+                <input
+                  type="text"
+                  class="nav-search-field"
+                  placeholder="Search"
+                />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main id="signup-main">
       <section id="signup-form-section">
-        <h3>Welcome!</h3>
         <form>
-          <fieldset class="signup-form-fieldset">
-            <legend>Sing up</legend>
+          <fieldset class="user-access-forms">
+            <legend>Sign up</legend>
             <label for="signup-email">Email*</label>
-            <input type="email" id="signup-email" />
+            <input type="email" placeholder="your.email@example.com" />
             <label for="signup-password">Password*</label>
-            <input type="password" id="signup-password" />
+            <input type="password" placeholder="at least 8 characters" />
             <label for="signup-username">Username*</label>
-            <input type="text" id="signup-username" />
+            <input type="text" placeholder="your_username" />
             <label for="signup-avatar">Avatar</label>
-            <input type="file" id="signup-avatar" />
+            <input type="file" />
             <label for="signup-countries">Select your country</label>
-            <input list="countries" name="countries" id="signup-countries" />
+            <input list="countries" name="countries" placeholder="Country" />
             <datalist id="countries">
               <option value="USA"></option>
               <option value="Bulgaria"></option>
               <option value="Ukraine"></option>
               <option value="Portugal"></option>
             </datalist>
-            <button type="submit">Sign up</button>
+            <button type="submit" class="user-access-buttons">Sign up</button>
           </fieldset>
         </form>
       </section>
     </main>
-    <footer id="home-footer">
+    <footer id="signup-footer">
       <div class="footer-links">
-        <a href="">Contacts</a>
-        <a href="">Terms</a>
+        <div class="footer-link-background"><a href="">Contacts</a></div>
+        <div class="footer-link-background"><a href="">Terms</a></div>
         <p class="rights">All rights reserved 2024</p>
       </div>
     </footer>

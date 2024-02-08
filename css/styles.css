@@ -7,6 +7,10 @@ body {
   background-position: right 0 top 10%, right 0% bottom 0;
 }
 
+.m-1 {
+  margin: 1% 3%;
+}
+
 p {
   width: 50%;
   margin-left: 3%;
@@ -16,7 +20,6 @@ p {
 
 h1 {
   font-size: 28px;
-  margin: 1% 3%;
 }
 
 h1::first-letter {
@@ -30,7 +33,6 @@ h2 {
 }
 
 h3 {
-  margin: 1% 3%;
   font-size: 22px;
 }
 
@@ -146,6 +148,11 @@ td {
   line-height: 1.5;
 }
 
+.popbook-annotation p {
+  margin: 0;
+  width: 100%;
+}
+
 .author-home-popbooks {
   margin: 2% 0 0 0;
   width: 100%;
@@ -155,7 +162,6 @@ td {
 /* Pricing table */
 .pricing-table {
   width: 80%;
-  margin: 1% 3%;
   background-color: #f5ebe0;
   box-shadow: 0 0 3px black;
 }
@@ -222,7 +228,6 @@ td {
 }
 
 .free-trial-button {
-  margin: 1% 3%;
   background-color: #f5ebe0;
   font-size: 16px;
   padding: 0.3%;
@@ -251,7 +256,6 @@ td {
 }
 
 .discount-info-group h3 {
-  margin: 0;
   width: 100%;
 }
 
@@ -265,28 +269,23 @@ td {
   font-weight: bold;
 }
 
-/* Login */
-
-#login-form-section h3 {
-  margin-top: 3%;
-}
-
-.login-form-fieldset {
+/* Forms */
+fieldset.user-access-forms {
   width: 25%;
-  margin: 4% 3% 0;
+  margin: 3% 3% 0;
 }
 
-.login-form-fieldset legend {
-  font-size: 20px;
-  margin-bottom: 2%;
+fieldset.user-access-forms legend {
+  font-size: 24px;
+  margin-bottom: 4%;
 }
 
-.login-form-fieldset > label {
+fieldset.user-access-forms > label {
   display: inline-block;
   margin: 5% 0 0;
 }
 
-.login-form-fieldset > input {
+fieldset.user-access-forms > input {
   display: inline-block;
   margin: 2% 0 0;
   border: solid 2px rgb(117, 79, 68, 0.3);
@@ -294,15 +293,24 @@ td {
   width: 100%;
 }
 
-.login-form-fieldset > input:invalid {
+fieldset.user-access-forms > input:invalid {
   border: solid 2px rgba(170, 19, 11, 0.3);
 }
 
-.login-form-fieldset > input::placeholder {
+fieldset.user-access-forms > input:focus {
+  border: solid 2px rgb(117, 79, 68, 0.6);
+}
+
+fieldset.user-access-forms > input:focus::placeholder {
+  color: transparent;
+}
+
+fieldset.user-access-forms > input::placeholder {
   font-size: 16px;
 }
 
-.login-button {
+/*Login and signup buttons*/
+.user-access-buttons {
   display: inline-block;
   margin: 3% 0;
   background-color: #f5ebe0;
@@ -312,19 +320,19 @@ td {
   border-radius: 5%;
 }
 
-.login-button:hover {
+.user-access-buttons:hover {
   background-color: rgb(245, 235, 224, 0.5);
 }
 
-.login-button:active {
+.user-access-buttons:active {
   background-color: rgb(245, 235, 224, 0.5);
   border: solid 2px rgb(117, 79, 68, 0.3);
   border-radius: 5%;
 }
 
+/* Login */
 .login-form + a {
   color: black;
-  margin: 1% 3%;
 }
 
 aside > p {
@@ -334,10 +342,6 @@ aside > p {
 
 aside a {
   color: black;
-}
-
-.signup-form-fieldset {
-  width: 10%;
 }
 
 .footer-links {
