@@ -13,7 +13,6 @@
     <header id="reviews-header">
       <div class="header-content-style">
         <h1 class="m-1">Bookworm Digital library</h1>
-        <h3 class="m-1">Millions of ebooks to everyworm's taste.</h3>
         <div class="nav-block-style">
           <nav class="main-nav">
             <ul>
@@ -25,17 +24,15 @@
               <li><a href="./reviews.html">Reviews</a></li>
               <li><a href="../index.html#about-us">About</a></li>
               <li><a href="./login.html">Login</a></li>
-              <li class="nav-search-button-li">
-                <button type="button" class="nav-search-button">Search</button>
-              </li>
-              <li class="nav-search-field-li">
-                <input
-                  type="text"
-                  class="nav-search-field"
-                  placeholder="Search"
-                />
-              </li>
             </ul>
+            <div class="nav-search-field-div">
+              <input
+                type="text"
+                class="nav-search-field"
+                placeholder="Search"
+              />
+              <button type="button" class="nav-search-button">Search</button>
+            </div>
           </nav>
         </div>
       </div>
@@ -43,55 +40,126 @@
     <main id="reviews-main">
       <section id="most-rated-reviews">
         <h2>Most rated reviews</h2>
-        <blockquote cite="https://www.blindtextgenerator.com/lorem-ipsum">
-          <p>
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean. A small river named Duden flows by their place and
-            supplies it with the necessary regelialia. It is a paradisematic
-            country, in which roasted parts of sentences fly into your mouth.
-          </p>
-          <cite>John Smith-Test</cite>
-          <time datetime="2023-11-12 14:55:19">2023-11-12 14:55:19</time>
-          <address>
-            <a href="mailto:johnsmithtest@testmail.test"
-              >Contact the reviewer</a
-            >
-          </address>
-        </blockquote>
-        <blockquote cite="https://www.blindtextgenerator.com/lorem-ipsum">
-          <p>
-            Even the all-powerful Pointing has no control about the blind texts
-            it is an almost unorthographic life One day however a small line of
-            blind text by the name of Lorem Ipsum decided to leave for the far
-            World of Grammar. The Big Oxmox advised her not to do so, because
-            there were thousands of bad Commas, wild Question Marks and devious
-            Semikoli, but the Little Blind Text didn't listen. She packed her
-            seven versalia, put her initial into the belt and made herself on
-            the way. When she reached the first hills of the Italic Mountains,
-            she had a last view back on the skyline of her hometown
-            Bookmarksgrove, the headline of Alphabet Village and the subline of
-            her own road, the Line Lane.
-          </p>
-          <cite>Terry Taylor-Test</cite>
-          <time datetime="2022-03-11 10:32:02">2022-03-11 10:32:02</time>
-          <address>
-            <a href="mailto:terrytaylortest@testmail.test"
-              >Contact the reviewer</a
-            >
-          </address>
-        </blockquote>
+        <div class="best-reviews-container">
+          <div class="review-container">
+            <blockquote cite="https://www.blindtextgenerator.com/lorem-ipsum">
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts. Separated
+                they live in Bookmarksgrove right at the coast of the Semantics,
+                a large language ocean. A small river named Duden flows by their
+                place and supplies it with the necessary regelialia. It is a
+                paradisematic country, in which roasted parts of sentences fly
+                into your mouth.
+              </p>
+              <div class="review-author-time">
+                <cite>John Smith-Test</cite>
+
+                <time datetime="2023-11-12 14:55:19"
+                  ><span>2023-11-12 14:55:19</span></time
+                >
+              </div>
+            </blockquote>
+          </div>
+          <div class="review-container">
+            <blockquote cite="https://www.blindtextgenerator.com/lorem-ipsum">
+              <p>
+                Even the all-powerful Pointing has no control about the blind
+                texts it is an almost unorthographic life One day however a
+                small line of blind text by the name of Lorem Ipsum decided to
+                leave for the far World of Grammar. The Big Oxmox advised her
+                not to do so, because there were thousands of bad Commas, wild
+                Question Marks and devious Semikoli, but the Little Blind Text
+                didn't listen. She packed her seven versalia, put her initial
+                into the belt and made herself on the way. When she reached the
+                first hills of the Italic Mountains, she had a last view back on
+                the skyline of her hometown Bookmarksgrove, the headline of
+                Alphabet Village and the subline of her own road, the Line Lane.
+              </p>
+              <div class="review-author-time">
+                <cite>Terry Taylor-Test</cite>
+                <time datetime="2022-03-11 10:32:02"
+                  ><span>2022-03-11 10:32:02</span></time
+                >
+              </div>
+            </blockquote>
+          </div>
+          <div class="review-container">
+            <blockquote cite="https://chat.openai.com/">
+              <p>
+                Alice Waters' "The Nightingale's Song" is a masterpiece of
+                historical fiction that transports readers to the heart of World
+                War II-era France. Set against the backdrop of the Nazi
+                occupation, Waters weaves a spellbinding tale of love, courage,
+                and sacrifice. The story follows the lives of two sisters,
+                Isabelle and Vianne, as they navigate the perils of war in their
+                own unique ways. Isabelle, rebellious and fearless, joins the
+                French Resistance, while Vianne, determined to protect her
+                family, harbors a secret of her own. Waters' lyrical prose
+                brings the characters to life, immersing readers in their
+                triumphs and tribulations.
+              </p>
+              <div class="review-author-time">
+                <cite>Paul GPT</cite>
+                <time datetime="2023-06-22 11:00:05"
+                  ><span>2023-06-22 11:00:05</span></time
+                >
+              </div>
+            </blockquote>
+          </div>
+          <div class="review-container">
+            <blockquote>
+              <p>
+                Kate Morton's "The Forgotten Garden" is a captivating tale of
+                family secrets, hidden treasures, and the enduring power of
+                storytelling. The novel spans multiple generations and
+                continents, weaving together the lives of three women connected
+                by a mysterious garden on the coast of Cornwall. When Cassandra,
+                a young woman adrift in the world, inherits the garden and a
+                cottage in England, she sets out on a journey to uncover the
+                truth about her past. Along the way, she discovers the stories
+                of Nell, a foundling raised by a loving family in Australia, and
+                Eliza, a wealthy aristocrat with a tragic past. Morton's prose
+                is evocative and atmospheric, transporting readers to the
+                windswept cliffs of Cornwall and the sun-drenched shores of
+                Australia. The intricate plot unfolds slowly, revealing layer
+                upon layer of secrets and betrayals as the characters' lives
+                intertwine. As Cassandra delves deeper into her family's
+                history, she learns the true meaning of love, loss, and
+                belonging. "The Forgotten Garden" is a beautifully written novel
+                that will tug at your heartstrings and keep you guessing until
+                the very end.
+              </p>
+              <div class="review-author-time">
+                <cite>Sarah GPT</cite>
+                <time datetime="2024-01-10 00:30:12"
+                  ><span>2024-01-10 00:30:12</span></time
+                >
+              </div>
+            </blockquote>
+          </div>
+        </div>
       </section>
-      <section id="reviews-trial">
-        <h4>Start you free trial now!</h4>
-        <button type="button" id="trial-button">Start for free</button>
+      <section id="free-trial-reviews" class="trial-reviews">
+        <div>
+          <p>
+            Sign up to rate the reviews and write your own ones! Start your free
+            trial today!
+          </p>
+          <button type="button" class="free-trial-button m-1">
+            Start for free
+          </button>
+        </div>
       </section>
     </main>
     <footer id="reviews-footer">
       <div class="footer-links">
-        <a href="">Contacts</a>
-        <a href="">Terms</a>
+        <div class="footer-link-background">
+          <a href="">Contacts</a>
+        </div>
+        <div class="footer-link-background">
+          <a href="">Terms</a>
+        </div>
         <p class="rights">All rights reserved 2024</p>
       </div>
     </footer>

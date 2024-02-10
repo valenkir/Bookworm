@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Caveat";
+  src: url("../assets/fonts/caveat/Caveat-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 1000;
+}
+@font-face {
+  font-family: "Nunito sans";
+  src: url("../assets/fonts/nunito-sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 1000;
+}
+
 body {
   font-family: "Monaco", sans-serif;
   color: #2f2f2f;
@@ -19,11 +32,12 @@ p {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 60px;
+  font-family: "Caveat", sans-serif;
 }
 
 h1::first-letter {
-  font-size: 30px;
+  font-size: 80px;
   font-weight: 600;
 }
 
@@ -51,6 +65,11 @@ td {
   color: black;
 }
 
+.header-content-style h3 {
+  font-family: "Caveat", sans-serif;
+  font-size: 40px;
+}
+
 /* Navigation */
 
 .nav-block-style {
@@ -60,10 +79,23 @@ td {
   margin-right: 0;
 }
 
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .main-nav li {
-  /* in case we need bottom and top margins and width/height */
-  display: inline-block;
-  margin: 1% auto 1% 3%;
+  margin-left: 40px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .main-nav a {
@@ -72,24 +104,16 @@ td {
   font-size: 18px;
 }
 
+.nav-search-field-div {
+  display: flex;
+}
+
 .nav-search-field {
-  display: inline-block;
   height: 25px;
   border: none;
 }
 
-.main-nav .nav-search-field-li {
-  float: right;
-  margin: 0.69% 0;
-}
-
-.main-nav .nav-search-button-li {
-  float: right;
-  margin: 0.69% 1% auto 0;
-}
-
 .nav-search-button {
-  display: inline-block;
   height: 27.5px;
   border: none;
   background-color: #f5ebe0;
@@ -144,7 +168,6 @@ td {
   right: 5%;
   color: black;
   font-size: 18px;
-  line-height: 1.5;
 }
 
 .popbook-annotation p {
@@ -269,6 +292,76 @@ td {
 
 .discount-info-group strong {
   font-weight: bold;
+}
+
+/*Reviews*/
+
+.best-reviews-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.review-container {
+  background-color: #f5ebe0;
+  width: 60%;
+  margin-bottom: 2%;
+  padding: 1% 0 1% 0;
+  border-right: 20px solid #c7d6d5;
+}
+
+.review-container p {
+  margin-bottom: 1%;
+  margin-left: 5%;
+  text-align: justify;
+  width: 90%;
+  line-height: 2;
+  font-family: "Nunito sans", sans-serif;
+  /*challenge*/
+  font-stretch: condensed;
+}
+
+.review-container cite,
+time {
+  margin-left: 5%;
+}
+
+.review-author-time cite,
+.review-author-time span {
+  font-family: "Nunito sans", sans-serif;
+  /*challenge*/
+  font-stretch: condensed;
+  font-size: 16px;
+}
+
+.review-container blockquote {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-container blockquote .review-author-time {
+  display: flex;
+  flex-direction: column;
+  /*doesn't work*/
+  justify-items: flex-end;
+}
+
+.trial-reviews {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  padding: 1%;
+}
+
+.trial-reviews p {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 25px;
+}
+
+.trial-reviews button {
+  margin-left: 22%;
+  font-size: 20px;
+  padding: 1%;
 }
 
 /* Forms */
