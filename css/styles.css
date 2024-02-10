@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
 @font-face {
   font-family: "Caveat";
   src: url("../assets/fonts/caveat/Caveat-VariableFont_wght.ttf")
@@ -34,6 +36,7 @@ p {
 h1 {
   font-size: 60px;
   font-family: "Caveat", sans-serif;
+  text-shadow: 3px 2px 2px #00000080;
 }
 
 h1::first-letter {
@@ -246,6 +249,8 @@ td {
   width: 100%;
   display: block;
   margin-bottom: 5%;
+  /* challenge - slashed-zero, shorthand */
+  font: bold 20px "Roboto Mono", sans-serif;
 }
 
 #free-trial p {
@@ -341,8 +346,6 @@ time {
 .review-container blockquote .review-author-time {
   display: flex;
   flex-direction: column;
-  /*doesn't work*/
-  justify-items: flex-end;
 }
 
 .trial-reviews {
