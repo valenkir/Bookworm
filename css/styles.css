@@ -140,8 +140,7 @@ td {
 
 .popbook-annotation {
   position: absolute;
-  left: 5%;
-  top: 7%;
+  top: 2%;
   right: 5%;
   color: black;
   font-size: 18px;
@@ -149,12 +148,15 @@ td {
 }
 
 .popbook-annotation p {
-  margin: 0;
-  width: 100%;
+  margin-left: 5%;
+  margin-top: 2%;
+  width: 90%;
+  text-align: justify;
 }
 
 .author-home-popbooks {
-  margin: 2% 0 0 0;
+  margin-left: 5%;
+  margin-top: 2%;
   width: 100%;
   display: inline-block;
 }
