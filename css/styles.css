@@ -384,12 +384,10 @@ time {
 }
 
 .user-access-forms label {
-  display: inline-block;
   margin: 5% 0 0;
 }
 
 .user-access-forms input {
-  display: inline-block;
   margin: 2% 0 0;
   border: solid 2px rgb(117, 79, 68, 0.3);
   height: 29px;
