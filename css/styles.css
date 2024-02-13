@@ -91,11 +91,11 @@ td {
 .main-nav ul {
   display: flex;
   flex-direction: row;
+  gap: 10px;
 }
 
 .main-nav li {
   margin-left: 40px;
-  margin-right: 10px;
   display: flex;
   align-items: center;
 }
