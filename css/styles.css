@@ -368,22 +368,27 @@ time {
 }
 
 /* Forms */
-fieldset.user-access-forms {
+.user-access-forms {
   width: 25%;
-  margin: 3% 3% 0;
+  margin: 3% 3% 1%;
+  padding: 3%;
+  background-color: rgb(199, 214, 213, 0.4);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-fieldset.user-access-forms legend {
+.user-access-forms legend {
   font-size: 24px;
   margin-bottom: 4%;
 }
 
-fieldset.user-access-forms label {
+.user-access-forms label {
   display: inline-block;
   margin: 5% 0 0;
 }
 
-fieldset.user-access-forms input {
+.user-access-forms input {
   display: inline-block;
   margin: 2% 0 0;
   border: solid 2px rgb(117, 79, 68, 0.3);
@@ -391,23 +396,23 @@ fieldset.user-access-forms input {
   width: 100%;
 }
 
-fieldset.user-access-forms input:invalid {
+.user-access-forms input:invalid {
   border: solid 2px rgba(170, 19, 11, 0.3);
 }
 
-fieldset.user-access-forms input:focus {
+.user-access-forms input:focus {
   border: solid 2px rgb(117, 79, 68, 0.6);
 }
 
-fieldset.user-access-forms input:focus::placeholder {
+.user-access-forms input:focus::placeholder {
   color: transparent;
 }
 
-fieldset.user-access-forms > input::placeholder {
+.user-access-forms > input::placeholder {
   font-size: 16px;
 }
 
-fieldset.user-access-forms input.avatar-file-button {
+.user-access-forms input.avatar-file-button {
   border: none;
   height: 35px;
 }
@@ -421,21 +426,21 @@ fieldset.user-access-forms input.avatar-file-button {
 }
 
 .avatar-file-button::file-selector-button:hover {
-  background-color: rgb(245, 235, 224, 0.5);
+  background-color: white;
   cursor: pointer;
 }
 
 .avatar-file-button::file-selector-button:active {
-  background-color: rgb(245, 235, 224, 0.5);
+  background-color: white;
   border: solid 2px rgb(117, 79, 68, 0.3);
   border-radius: 5%;
 }
 
 /*Login and signup buttons*/
 .user-access-buttons {
-  display: inline-block;
   margin: 3% 0;
   background-color: #f5ebe0;
+  width: 40%;
   font-size: 16px;
   padding: 1% 10%;
   border: solid 2px rgb(117, 79, 68, 0.3);
@@ -443,11 +448,11 @@ fieldset.user-access-forms input.avatar-file-button {
 }
 
 .user-access-buttons:hover {
-  background-color: rgb(245, 235, 224, 0.5);
+  background-color: white;
 }
 
 .user-access-buttons:active {
-  background-color: rgb(245, 235, 224, 0.5);
+  background-color: white;
   border: solid 2px rgb(117, 79, 68, 0.3);
   border-radius: 5%;
 }
