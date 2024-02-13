@@ -91,7 +91,6 @@ td {
 .main-nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
 
 .main-nav li {
