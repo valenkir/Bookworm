@@ -375,8 +375,9 @@ time {
   border-radius: 10px;
 }
 
-.user-access-forms legend {
+.user-access-forms h2 {
   font-size: 24px;
+  margin-left: 0;
   margin-bottom: 4%;
 }
 
