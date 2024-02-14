@@ -37,6 +37,11 @@ body {
   flex-direction: column;
 }
 
+.d-flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 p {
   width: 50%;
   margin-left: 3%;
@@ -134,7 +139,8 @@ td {
 .popular-books-container {
   margin-left: 3%;
   margin-top: 0;
-  width: 50%;
+  width: 70%;
+  gap: 2rem;
 }
 
 .popular-books-container img {
@@ -171,7 +177,6 @@ td {
 
 .popbook-annotation {
   position: absolute;
-  top: 2%;
   right: 5%;
   color: black;
   font-size: 18px;
@@ -189,6 +194,12 @@ td {
   margin-top: 2%;
   width: 100%;
   display: inline-block;
+}
+
+/*About us*/
+
+.about-us-section {
+  margin-top: 10rem;
 }
 
 /* Pricing table */
@@ -304,10 +315,6 @@ td {
 }
 
 /*Reviews*/
-
-.best-reviews-container {
-  flex-flow: row wrap;
-}
 
 .review-container {
   background-color: #f5ebe0;
@@ -446,8 +453,13 @@ time {
 }
 
 /* Login */
-.login-form + a {
+.user-access-forms a {
   color: black;
+  margin-left: 0;
+}
+
+.user-access-forms a:hover {
+  color: rgb(86, 58, 50);
 }
 
 aside > p {
@@ -457,6 +469,10 @@ aside > p {
 
 aside a {
   color: black;
+}
+
+aside a:hover {
+  color: rgb(86, 58, 50);
 }
 
 .footer-links {
