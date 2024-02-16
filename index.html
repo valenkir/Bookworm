@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="position-relative">
     <header
       id="home-header"
       class="d-flex justify-content-between align-items-center"
     >
-      <div class="logo-text m-custom-1">
+      <div class="logo-text">
         <h1>Bookworm Digital library</h1>
         <h3>Millions of ebooks to everyworm's taste.</h3>
       </div>
@@ -63,8 +63,28 @@
           </div>
         </div>
       </nav>
+      <div
+        class="hero-bg bg-primary-gradient position-absolute top-0 start-0"
+      ></div>
     </header>
     <main id="home-main">
+      <section
+        id="hero-section"
+        class="hero-section d-flex justify-content-between align-items-center mt-4"
+      >
+        <img
+          src="./images/hero-woman-with-book-m.svg"
+          alt="A woman in a Victorian dress with a book"
+          class="m-custom-23"
+        />
+        <p class="hero-text me-5">
+          Embark on a journey of discovery with <span>Bookworm</span>, your
+          premier destination for accessing a world of knowledge at your
+          fingertips. Our digital library web application offers an extensive
+          collection of e-books and articles, curated to cater to diverse
+          interests and preferences.
+        </p>
+      </section>
       <section id="home-popular-books">
         <h2>Most popular books</h2>
         <div class="popular-books-container d-flex-row-wrap">
