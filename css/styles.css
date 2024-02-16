@@ -25,6 +25,10 @@ body {
   margin-top: 10rem;
 }
 
+.font-size-1-5rem {
+  font-size: 1.5rem;
+}
+
 .bg-primary-custom {
   background-color: #f5ebe0;
 }
