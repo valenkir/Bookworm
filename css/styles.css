@@ -16,7 +16,7 @@
 body {
   font-family: "Monaco", sans-serif;
   color: #2f2f2f;
-  padding: 1% 0 0 3%;
+  padding-top: 1%;
 }
 
 /*Helper classes*/
@@ -104,7 +104,6 @@ td {
 
 .hero-bg-semi-circle {
   z-index: -1;
-  height: 900px;
 }
 
 /* Popular books - home page */
@@ -159,15 +158,6 @@ td {
   margin-top: 2%;
   width: 100%;
   display: inline-block;
-}
-
-/*About us*/
-
-.about-bg-semi-circle {
-  height: 400px;
-  bottom: 0;
-  left: 25%;
-  z-index: -1;
 }
 
 /* Pricing table */
