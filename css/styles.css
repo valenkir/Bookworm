@@ -21,6 +21,10 @@ body {
 
 /*Helper classes*/
 
+.mt-10-custom {
+  margin-top: 10rem;
+}
+
 .bg-primary-custom {
   background-color: #f5ebe0;
 }
@@ -105,10 +109,6 @@ td {
 
 /* Popular books - home page */
 
-.home-popular-books-section {
-  margin-top: 14%;
-}
-
 .popular-books-container {
   gap: 2rem;
 }
@@ -164,7 +164,6 @@ td {
 /*About us*/
 
 .about-us-section {
-  margin-top: 10rem;
   text-align: justify;
 }
 
