@@ -43,12 +43,6 @@ body {
   flex-flow: row wrap;
 }
 
-p {
-  width: 50%;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 h1 {
   font-size: 3rem;
   font-family: "Caveat", sans-serif;
@@ -60,8 +54,7 @@ h1::first-letter {
 }
 
 h2 {
-  font-size: 26px;
-  margin-top: 2%;
+  font-size: 2rem;
 }
 
 h3 {
@@ -80,20 +73,12 @@ td {
 
 /*Logo*/
 
-.logo-text {
-  width: 50%;
-}
-
 .logo-text h3 {
   font-family: "Caveat", sans-serif;
   font-size: 2rem;
 }
 
 /* Navigation */
-
-.navbar {
-  width: 50%;
-}
 
 .navbar-nav li {
   font-size: 1.2rem;
@@ -106,7 +91,6 @@ td {
   font-size: 2rem;
   line-height: 2;
   text-align: justify;
-  width: 100%;
 }
 
 .hero-text-bg {
@@ -114,24 +98,18 @@ td {
   padding: 2% 4%;
 }
 
-.hero-bg {
-  width: 100%;
-  height: 41%;
-  z-index: -2;
-}
-
 .hero-bg-semi-circle {
   z-index: -1;
-  width: 50%;
-  height: 41%;
+  height: 900px;
 }
 
 /* Popular books - home page */
 
+.home-popular-books-section {
+  margin-top: 14%;
+}
+
 .popular-books-container {
-  margin-left: 3%;
-  margin-top: 0;
-  width: 70%;
   gap: 2rem;
 }
 
@@ -155,12 +133,7 @@ td {
 
 .popbooks-img-container {
   position: relative;
-  display: inline-block;
   margin-top: 2%;
-}
-
-.popbooks-img-container .first-pop-book-home {
-  margin-top: 0;
 }
 
 .popbooks-img-container .overlay-with-annotation:hover {
@@ -192,6 +165,14 @@ td {
 
 .about-us-section {
   margin-top: 10rem;
+  text-align: justify;
+}
+
+.about-bg-semi-circle {
+  height: 400px;
+  bottom: 0;
+  left: 25%;
+  z-index: -1;
 }
 
 /* Pricing table */
@@ -466,33 +447,4 @@ aside a {
 
 aside a:hover {
   color: rgb(86, 58, 50);
-}
-
-.footer-links {
-  margin: 2% 0 2% 3%;
-}
-
-footer a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-}
-
-.footer-link-background {
-  display: inline-block;
-  margin: 2% 2% 0 0;
-  background-color: rgb(245, 235, 224, 0);
-  border-radius: 10%;
-  padding: 0.5%;
-}
-
-footer .footer-link-background:hover {
-  background-color: rgb(245, 235, 224, 1);
-}
-
-.rights {
-  float: right;
-  width: auto;
-  margin: 4% 1% 0 0;
-  font-size: 16px;
 }

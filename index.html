@@ -15,12 +15,18 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="position-relative">
+  <body class="position-relative bg-primary-custom">
+    <div
+      class="about-bg-semi-circle bg-secondary-custom position-absolute rounded-top-pill w-50"
+    ></div>
+    <div
+      class="hero-bg-semi-circle bg-secondary-custom position-absolute top-0 end-0 rounded-start-pill w-50"
+    ></div>
     <header
       id="home-header"
       class="d-flex justify-content-between align-items-center"
     >
-      <div class="logo-text">
+      <div class="logo-text w-50">
         <h1>Bookworm Digital library</h1>
         <h3>Millions of ebooks to everyworm's taste.</h3>
       </div>
@@ -63,12 +69,6 @@
           </div>
         </div>
       </nav>
-      <div
-        class="hero-bg bg-primary-custom position-absolute top-0 start-0"
-      ></div>
-      <div
-        class="hero-bg-semi-circle bg-secondary-custom position-absolute top-0 end-0 rounded-start-pill"
-      ></div>
     </header>
     <main id="home-main">
       <section
@@ -81,7 +81,7 @@
           class="m-custom-23"
         />
         <div class="hero-text-bg rounded-start-2">
-          <p class="hero-text">
+          <p class="hero-text w-100">
             Embark on a journey of discovery with Bookworm, your premier
             destination for accessing a world of knowledge at your fingertips.
             Our digital library web application offers an extensive collection
@@ -90,10 +90,12 @@
           </p>
         </div>
       </section>
-      <section id="home-popular-books">
-        <h2>Most popular books</h2>
-        <div class="popular-books-container d-flex-row-wrap">
-          <div class="popbooks-img-container first-pop-book-home">
+      <section id="home-popular-books" class="home-popular-books-section">
+        <h2 class="mb-5 text-center">Most popular books</h2>
+        <div
+          class="popular-books-container d-flex-row-wrap align-items-center justify-content-center pb-4"
+        >
+          <div class="popbooks-img-container mt-0">
             <a href="" class="popbook-link">
               <picture>
                 <source
@@ -106,7 +108,7 @@
                   class="first-pop-book-home"
                 />
                 <div class="overlay-with-annotation popbook-annotation">
-                  <p>
+                  <p class="lh-base">
                     In "The Silent Wombat's Symphony," Olivia Harper weaves a
                     poignant tale of love, loss, and the unspoken connections
                     that bind us. Set against the backdrop of a small coastal
@@ -123,7 +125,7 @@
               </picture></a
             >
           </div>
-          <div class="popbooks-img-container first-pop-book-home">
+          <div class="popbooks-img-container mt-0">
             <a class="popbook-link" href=""
               ><picture>
                 <source
@@ -135,7 +137,7 @@
                   alt="'City of Whispers' book cover"
                 />
                 <div class="overlay-with-annotation popbook-annotation">
-                  <p>
+                  <p class="lh-base">
                     Aiden Foster invites readers into the shadowy alleyways and
                     clandestine corners of "City of Whispers," a neo-noir
                     thriller. Detective Jake Harrington, haunted by a troubled
@@ -165,7 +167,7 @@
                   alt="'Whispers of the Forgotten' book cover"
                 />
                 <div class="overlay-with-annotation popbook-annotation">
-                  <p>
+                  <p class="lh-base">
                     Embark on a mind-bending adventure with Dr. Emily Reed in
                     "Chronicles of the Quantum Explorer." Blending cutting-edge
                     science with gripping storytelling, Reed introduces readers
@@ -195,7 +197,7 @@
                   alt="'Chronicles of the Quantum Explorer.' book cover"
                 />
                 <div class="overlay-with-annotation popbook-annotation">
-                  <p>
+                  <p class="lh-base">
                     In Marcus Grey's "Whispers of the Forgotten," the realms of
                     fantasy and reality collide in a mesmerizing tapestry of
                     magic and mystery. The story unfolds in the ancient city of
@@ -215,26 +217,62 @@
           </div>
         </div>
       </section>
-      <section id="about-us" class="about-us-section">
-        <h2>About us</h2>
-        <p>
-          Welcome to Bookworm, your premier destination for a vast and diverse
-          digital collection! At Bookworm, we believe in the power of knowledge
-          and the accessibility of information for everyone. Explore, learn, and
-          discover in our digital realm!
-        </p>
+      <section
+        id="about-us"
+        class="about-us-section position-relative pt-2 me-3"
+      >
+        <h2 class="text-center">About us</h2>
+        <div class="d-flex flex-row flex-wrap gap-3 mt-5 fs-5 me-5">
+          <p class="lh-lg">
+            Welcome to Bookworm, your premier destination for a vast and diverse
+            digital collection! At Bookworm, we believe in the power of
+            knowledge and the accessibility of information for everyone.
+            Explore, learn, and discover in our digital realm! The European
+            languages are members of the same family. Their separate existence
+            is a myth. For science, music, sport, etc, Europe uses the same
+            vocabulary. The languages only differ in their grammar, their
+            pronunciation and their most common words.
+          </p>
+          <p class="lh-lg">
+            Everyone realizes why a new common language would be desirable: one
+            could refuse to pay expensive translators. To achieve this, it would
+            be necessary to have uniform grammar, pronunciation and more common
+            words. If several languages coalesce, the grammar of the resulting
+            language is more simple and regular than that of the individual
+            languages. The new common language will be more simple and regular
+            than the existing European languages. It will be as simple as
+            Occidental; in fact, it will be Occidental. To an English person, it
+            will seem like simplified English, as a skeptical Cambridge friend
+            of mine told me what Occidental is.The European languages are
+            members of the same family. Their separate existence is a myth. For
+            science, music, sport, etc, Europe uses the same vocabulary. The
+            languages only differ in their grammar, their pronunciation and
+            their most common words. Everyone realizes why a new common language
+            would be desirable: one could refuse to pay expensive translators.
+          </p>
+          <p class="lh-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+            exercitationem, quae asperiores ab dignissimos velit praesentium,
+            officiis soluta molestiae, libero architecto laborum magni porro at.
+            Repellendus eos quos placeat aspernatur!
+          </p>
+        </div>
       </section>
     </main>
-    <footer id="home-footer">
+    <footer id="home-footer" class="d-flex justify-content-between mb-4 mt-5">
       <div class="footer-links">
-        <div class="footer-link-background">
-          <a href="">Contacts</a>
-        </div>
-        <div class="footer-link-background">
-          <a href="">Terms</a>
-        </div>
-        <p class="rights">All rights reserved 2024</p>
+        <a
+          href=""
+          class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover me-2"
+          >Contacts</a
+        >
+        <a
+          href=""
+          class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Terms</a
+        >
       </div>
+      <p class="me-3">All rights reserved 2024</p>
     </footer>
   </body>
 </html>
