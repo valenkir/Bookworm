@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body>
+  <body class="position-relative bg-primary-custom">
+    <div
+      class="hero-bg-semi-circle bg-secondary-custom position-absolute top-0 end-0 rounded-start-pill w-50 h-100"
+    ></div>
     <header
       id="signup-header"
       class="d-flex justify-content-between align-items-center"
@@ -98,12 +101,23 @@
         </form>
       </section>
     </main>
-    <footer id="signup-footer">
+    <footer
+      id="signup-footer"
+      class="d-flex justify-content-between mb-4 mt-5 ms-5 align-items-end"
+    >
       <div class="footer-links">
-        <div class="footer-link-background"><a href="">Contacts</a></div>
-        <div class="footer-link-background"><a href="">Terms</a></div>
-        <p class="rights">All rights reserved 2024</p>
+        <a
+          href=""
+          class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover me-2"
+          >Contacts</a
+        >
+        <a
+          href=""
+          class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Terms</a
+        >
       </div>
+      <p class="me-3">All rights reserved 2024</p>
     </footer>
   </body>
 </html>

@@ -15,12 +15,15 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body>
+  <body class="position-relative bg-primary-custom">
+    <div
+      class="hero-bg-semi-circle bg-secondary-custom position-absolute top-0 end-0 rounded-start-pill w-50 h-100"
+    ></div>
     <header
       id="pricing-header"
-      class="d-flex justify-content-between align-items-center"
+      class="d-flex justify-content-between align-items-center ms-5"
     >
-      <h1 class="logo-text m-custom-1">Bookworm Digital library</h1>
+      <h1>Bookworm Digital library</h1>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button
@@ -65,96 +68,90 @@
       </nav>
     </header>
     <main id="pricing-main">
-      <table class="pricing-table m-custom-1">
-        <caption>
-          Pricing plans
-        </caption>
-        <thead class="pricing-table-head">
-          <tr>
-            <td>Starter</td>
-            <td>Full</td>
-            <td>Family</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <span class="price-per-month">$5.99/month</span> Dive into the
-              world of knowledge with our Starter Plan, perfect for individuals
-              looking to explore the vast resources of our digital library. With
-              this plan, you'll enjoy access to a curated selection of e-books,
-              audiobooks, articles, and more, handpicked to cater to your
-              interests. While it's our most limited option, the Starter Plan
-              still offers a rich and diverse collection that will spark your
-              curiosity and ignite your imagination. Whether you're a casual
-              reader or a dedicated learner, take the first step towards
-              discovery with our affordable Starter Plan.
-            </td>
-            <td>
-              <span class="price-per-month discount">$8.99/month</span> Unlock
-              the full potential of our digital library with our comprehensive
-              Full Plan, designed to provide you with unrestricted access to all
-              our premium features and bonuses. As a subscriber to the Full
-              Plan, you'll enjoy unlimited downloads, ad-free browsing,
+      <h2 class="mt-5-custom text-center fw-semibold fs-3">
+        Choose your pricing plan
+      </h2>
+      <div
+        class="pricing-cards d-flex justify-content-center mt-5 gap-5 ms-5 me-5"
+      >
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title font-size-1-5rem text-center">Starter</h5>
+            <hgroup class="text-center mt-5 mb-5">
+              <h6 class="card-subtitle mb-3">$5.99</h6>
+              <span class="text-center">per month</span>
+            </hgroup>
+            <p class="card-text fs-5 lh-lg">
+              Perfect for individuals looking to explore the vast resources of
+              our digital library. With this plan, you'll enjoy access to a
+              curated selection of e-books, articles, and more, handpicked to
+              cater to your interests. While it's our most limited option, the
+              Starter Plan still offers a rich and diverse collection that will
+              spark your curiosity and ignite your imagination.
+            </p>
+            <button class="worm-into btn-primary-custom">Worm into</button>
+          </div>
+        </div>
+        <div class="card position-relative">
+          <div
+            class="position-absolute discount-badge d-flex align-items-center justify-content-center"
+          >
+            <span class="fw-semibold fs-4">-20%</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title font-size-1-5rem text-center">Full</h5>
+            <hgroup class="text-center mt-5 mb-5">
+              <h6 class="card-subtitle mb-3 fw-semibold">$8.99</h6>
+              <span class="text-center">per month</span>
+            </hgroup>
+            <p class="card-text fs-5 lh-lg">
+              Unlock the full potential of our digital library with our
+              comprehensive Full Plan, designed to provide you with unrestricted
+              access to all our premium features and bonuses. As a subscriber to
+              the Full Plan, you'll enjoy unlimited downloads, ad-free browsing,
               personalized recommendations, and exclusive access to our latest
-              releases and special collections. Dive deep into your favorite
-              genres, explore new authors, and embark on a journey of continuous
-              learning and enrichment. With the Full Plan, you'll have
-              everything you need to fuel your passion for reading and knowledge
-              acquisition, all in one convenient package.
-            </td>
-            <td>
-              <span class="price-per-month">$14.00/month</span> Share the joy of
-              reading and learning with your loved ones with our Family Plan,
-              the perfect choice for households seeking to expand their digital
-              library experience. With the Family Plan, you'll not only enjoy
-              all the benefits of the Full Plan for yourself but also extend
-              those privileges to up to three additional users. Whether it's
-              bonding over bedtime stories, collaborating on research projects,
-              or simply exploring new interests together, the Family Plan
-              fosters a sense of connection and exploration among family
-              members. Experience the power of knowledge-sharing and
-              community-building with our flexible and affordable Family Plan.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button type="button" class="worm-into-pricing">Worm into</button>
-            </td>
-            <td>
-              <button type="button" class="worm-into-pricing">Worm into</button>
-            </td>
-            <td>
-              <button type="button" class="worm-into-pricing">Worm into</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <section id="free-trial-pricing">
-        <p>Or start you free trial for a month!</p>
-        <button type="button" class="free-trial-button m-custom-1">
-          Start for free
-        </button>
-      </section>
-      <aside id="discount-info">
-        <hgroup class="discount-info-group">
-          <h3>Limited-Time Offer: Exclusive Full Plan Discount!</h3>
-          <p>
-            Only <del>$9.99/month</del> <strong>$8.99/month!</strong> We're
-            thrilled to announce a special, limited-time offer on our premium
-            Full Plan! For the next week, enjoy an exclusive 10% discount when
-            you subscribe to Full Plan. This is your chance to elevate your
-            experience with Bookworm at an unbeatable value.
-          </p>
-        </hgroup>
-      </aside>
-    </main>
-    <footer id="pricing-footer">
-      <div class="footer-links">
-        <div class="footer-link-background"><a href="">Contacts</a></div>
-        <div class="footer-link-background"><a href="">Terms</a></div>
-        <p class="rights">All rights reserved 2024</p>
+              releases and special collections.
+            </p>
+            <button class="worm-into btn-primary-custom">Worm into</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title font-size-1-5rem text-center">Family</h5>
+            <hgroup class="text-center mt-5 mb-5">
+              <h6 class="card-subtitle mb-3">$14.00</h6>
+              <span class="text-center">per month</span>
+            </hgroup>
+            <p class="card-text fs-5 lh-lg">
+              Share the joy of reading and learning with your loved ones with
+              our Family Plan, the perfect choice for households seeking to
+              expand their digital library experience. With the Family Plan,
+              you'll not only enjoy all the benefits of the Full Plan for
+              yourself but also extend those privileges to up to three
+              additional users.
+            </p>
+            <button class="worm-into btn-primary-custom">Worm into</button>
+          </div>
+        </div>
       </div>
+    </main>
+    <footer
+      id="pricing-footer"
+      class="d-flex justify-content-between mb-4 mt-5 ms-5 position-relative bottom-0"
+    >
+      <div class="footer-links">
+        <a
+          href=""
+          class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover me-2"
+          >Contacts</a
+        >
+        <a
+          href=""
+          class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Terms</a
+        >
+      </div>
+      <p class="me-3">All rights reserved 2024</p>
     </footer>
   </body>
 </html>
