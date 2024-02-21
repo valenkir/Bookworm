@@ -1,0 +1,76 @@
+/*Reviews*/
+
+.review-container {
+  background-color: #f5ebe0;
+  width: 60%;
+  margin-bottom: 2%;
+  padding: 1% 0 1% 0;
+  border-right: 20px solid #c7d6d5;
+}
+
+.review-container p {
+  margin-bottom: 1%;
+  margin-left: 5%;
+  text-align: justify;
+  width: 90%;
+  line-height: 2;
+  font-family: "Nunito sans", sans-serif;
+  /*challenge*/
+  font-stretch: condensed;
+}
+
+.review-container cite,
+time {
+  margin-left: 5%;
+}
+
+.review-author-time cite,
+.review-author-time span {
+  font-family: "Nunito sans", sans-serif;
+  /*challenge*/
+  font-stretch: condensed;
+  font-size: 16px;
+}
+
+.trial-reviews {
+  justify-content: center;
+  margin-top: 5%;
+  padding: 1%;
+}
+
+.trial-reviews p {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 25px;
+}
+
+.trial-reviews button {
+  margin-left: 22%;
+  font-size: 20px;
+  padding: 1%;
+}
+
+/* Trial */
+#free-trial p {
+  margin-top: 3%;
+}
+
+.free-trial-button {
+  background-color: #f5ebe0;
+  font-size: 16px;
+  padding: 0.3%;
+  border: solid transparent;
+  box-shadow: 0 0 2px 1px #00000080;
+  border-radius: 5%;
+}
+
+.free-trial-button:hover {
+  background-color: rgb(245, 235, 224, 0.5);
+}
+
+.free-trial-button:active {
+  background-color: rgb(245, 235, 224, 0.5);
+  border: solid 2px rgb(117, 79, 68, 0.3);
+  box-shadow: 0 0 5px 5px #754f4440;
+  border-radius: 5%;
+}

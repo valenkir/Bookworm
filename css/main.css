@@ -1,0 +1,72 @@
+/*Logo*/
+
+.logo-text h3 {
+  font-family: "Caveat", sans-serif;
+  font-size: 2rem;
+}
+
+/*Hero*/
+
+.hero-text {
+  font-size: 2rem;
+  line-height: 2;
+  text-align: justify;
+}
+
+.hero-text-bg {
+  width: 60%;
+  padding: 2% 4%;
+}
+
+/* Popular books - home page */
+
+.popular-books-container {
+  gap: 2rem;
+}
+
+.popular-books-container img {
+  border: 15px solid #c7d6d5;
+  margin-top: 0;
+}
+
+.overlay-with-annotation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  background-color: #c7d6d5;
+}
+
+.popbooks-img-container {
+  position: relative;
+  margin-top: 2%;
+}
+
+.popbooks-img-container .overlay-with-annotation:hover {
+  opacity: 1;
+}
+
+.popbook-annotation {
+  position: absolute;
+  right: 5%;
+  color: black;
+  font-size: 18px;
+}
+
+.popbook-annotation p {
+  margin-left: 5%;
+  margin-top: 2%;
+  width: 90%;
+}
+
+.author-home-popbooks {
+  margin-left: 5%;
+  margin-top: 2%;
+  width: 100%;
+  display: inline-block;
+}
