@@ -10,12 +10,7 @@
 .hero-text {
   font-size: 2rem;
   line-height: 2;
-  text-align: justify;
-}
-
-.hero-text-bg {
-  width: 60%;
-  padding: 2% 4%;
+  text-align: left;
 }
 
 /* Popular books - home page */
