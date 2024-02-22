@@ -2,7 +2,6 @@ function simpleValidation() {
   const requiredElements = document
     .getElementById("signup-form")
     .querySelectorAll("[required]");
-  const signupBtn = document.getElementById("signup-button");
   const errorMessage = document.getElementById("error-message");
   let areRequiredFieldsInvalid = false;
   for (const elem of requiredElements) {
