@@ -13,7 +13,6 @@ function simpleValidation() {
 
   if (areRequiredFieldsInvalid) {
     errorMessage.innerText = "Please fill the required fields with valid data";
-    console.log(errorMessage);
   } else {
     errorMessage.innerText = "";
   }
