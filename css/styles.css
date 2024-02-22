@@ -75,10 +75,6 @@ body {
 
 .btn-secondary-custom:hover {
   border: 0.15rem solid rgb(117, 79, 68, 0.6);
-  box-shadow: 0 5px 5px 0.5px rgb(0, 0, 0, 0.3);
-  transform: translate(0, -0.2rem);
-  transition-property: transform;
-  transition-duration: 0.2s;
 }
 
 .btn-secondary-custom:active {

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/registration.css" />
+    <script src="../js/registration-script.js" defer></script>
   </head>
   <body class="position-relative bg-primary-custom">
     <div
@@ -68,20 +69,26 @@
     <main id="signup-main">
       <section id="signup-form-section ms-5">
         <form
+          id="signup-form"
           action=""
           method="POST"
           target="_blank"
           class="signup-form d-flex flex-column w-25 ms-5 mt-5 me-0 bg-secondary-custom rounded shadow position-relative"
         >
-          <h2 class="fw-semibold fs-4 ml-0 mb-5">Sign up</h2>
-          <label for="signup-email" class="fw-semibold fs-6">Email*</label>
+          <h2 class="fw-semibold fs-4 ml-0 mb-4">Sign up</h2>
+          <p
+            id="error-message"
+            class="mt-2 --bs-danger-text-emphasis text-danger"
+          ></p>
+          <label for="signup-email" class="fw-semibold fs-6 mt-3">Email*</label>
           <input
             type="email"
             id="signup-email"
             placeholder="your.email@example.com"
             class="mt-2 primary-input"
             required
-            oninvalid="this.setCustomValidity('This is not a valid email address')"
+            oninvalid="setCustomValidity('The email format should be youremail@example.com')"
+            oninput="setCustomValidity('')"
           />
           <label for="signup-password" class="fw-semibold fs-6 mt-3"
             >Password*</label
@@ -93,6 +100,8 @@
             class="mt-2 primary-input"
             required
             minlength="8"
+            oninvalid="setCustomValidity('The password should be at least 8 characters long')"
+            oninput="setCustomValidity('')"
           />
           <label for="signup-username" class="fw-semibold fs-6 mt-3"
             >Username*</label
@@ -101,11 +110,13 @@
             type="text"
             id="signup-username"
             placeholder="your_username"
-            class="mt-2 primary-input"
+            class="primary-input"
             required
             pattern="[a-zA-Z][a-zA-Z0-9-_]"
             minlength="2"
             maxlength="20"
+            oninvalid="setCustomValidity('The username should be between 2 and 20 characters long')"
+            oninput="setCustomValidity('')"
           />
           <label for="signup-avatar" class="fw-semibold fs-6 mt-3 mb-2"
             >Avatar</label
@@ -113,7 +124,7 @@
           <input
             type="file"
             id="signup-avatar"
-            class="avatar-file-button mt-1"
+            class="avatar-file-button"
             accept="image/png, image/jpeg"
           />
           <label for="signup-countries" class="fw-semibold fs-6 mt-3"
@@ -132,27 +143,34 @@
             <option value="Ukraine"></option>
             <option value="Portugal"></option>
           </datalist>
-          <button type="submit" class="btn-secondary-custom btn-signup w-50">
+          <button
+            id="signup-button"
+            type="submit"
+            class="btn-secondary-custom mt-3 w-50"
+            onclick="simpleValidation()"
+          >
             Sign up
           </button>
         </form>
       </section>
     </main>
     <footer
-      id="login-footer"
-      class="mb-4 mt-5 align-items-end position-absolute bottom-0 w-100"
+      id="signup-footer"
+      class="d-flex justify-content-between mb-4 mt-5 ms-5 position-relative bottom-0"
     >
-      <a
-        href=""
-        class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover ms-5 me-2"
-        >Contacts</a
-      >
-      <a
-        href=""
-        class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-        >Terms</a
-      >
-      <p class="text-end me-5">All rights reserved 2024</p>
+      <section>
+        <a
+          href=""
+          class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover me-2"
+          >Contacts</a
+        >
+        <a
+          href=""
+          class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Terms</a
+        >
+      </section>
+      <p class="me-3">All rights reserved 2024</p>
     </footer>
   </body>
 </html>

@@ -1,5 +1,5 @@
 .signup-form {
-  padding: 2% 5% 5% 2%;
+  padding: 2% 5% 2% 2%;
 }
 
 .avatar-file-button::file-selector-button {
@@ -12,6 +12,7 @@
 
 .avatar-file-button::file-selector-button:hover {
   border-color: rgb(117, 79, 68, 0.6);
+  border-radius: 16px;
   cursor: pointer;
 }
 
@@ -19,10 +20,4 @@
   background-color: white;
   border-color: rgb(117, 79, 68, 0.6);
   cursor: pointer;
-}
-
-.btn-signup {
-  position: absolute;
-  bottom: 1rem;
-  left: 2.3rem;
 }
