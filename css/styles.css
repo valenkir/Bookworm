@@ -100,20 +100,6 @@ body {
   font-size: 16px;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.d-flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.d-flex-row-wrap {
-  display: flex;
-  flex-flow: row wrap;
-}
-
 h1 {
   font-size: 3rem;
   font-family: "Caveat", sans-serif;
@@ -126,14 +112,6 @@ h1::first-letter {
 
 h2 {
   font-size: 2rem;
-}
-
-h3 {
-  font-size: 22px;
-}
-
-h4 {
-  font-size: 20px;
 }
 
 /* Navigation */
