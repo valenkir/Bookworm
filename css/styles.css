@@ -50,6 +50,8 @@ body {
   border: 0.1rem solid #577573;
   border-radius: 16px;
   padding: 0.7rem 2rem;
+  transition-property: transform;
+  transition-duration: 200ms;
 }
 
 .btn-primary-custom:hover {
@@ -57,8 +59,6 @@ body {
   border: 0.1rem solid #577573;
   box-shadow: 0 5px 5px 0.5px rgb(0, 0, 0, 0.3);
   transform: translate(0, -0.2rem);
-  transition-property: transform;
-  transition-duration: 0.2s;
 }
 
 .btn-primary-custom:active {
