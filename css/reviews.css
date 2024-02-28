@@ -1,15 +1,29 @@
 /*Reviews*/
 
+@keyframes showReviewCards {
+  from {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
 .review-container {
   width: 60%;
   border-right: 20px solid #c7d6d5;
   border-bottom: 5px solid #c7d6d5;
   border-top: 5px solid #c7d6d5;
+  animation-name: showReviewCards;
+  animation-duration: 2000ms;
+  transition-property: transform;
+  transition-duration: 1000ms;
 }
 
 .review-container:hover {
-  position: relative;
-  left: 3%;
+  transform: translateX(5%);
 }
 
 .review-container p {
